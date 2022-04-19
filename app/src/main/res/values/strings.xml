@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="undoButton">UNDO</string>
+    <string name="dropButton">DROP</string>
+    <string name="swapButton">SWAP</string>
+    <string name="acButton">AC</string>
+    <string name="enterButton">ENTER</string>
+    <string name="button0">0</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+    <string name="signButton">+/-</string>
+    <string name="zeroButton">0</string>
+    <string name="dotButton">.</string>
+    <string name="expButton">y*</string>
+    <string name="sqrtButton">√</string>
+    <string name="multiplyButton">×</string>
+    <string name="divideButton">÷</string>
+    <string name="plusButton">+</string>
+    <string name="minusButton">-</string>
+    <string name="openSettings">...</string>
+    <string name="textView1">1:</string>
+    <string name="textView2">2:</string>
+    <string name="textView3">3:</string>
+    <string name="textView4">4:</string>
+    <string name="choose_rounding">Choose rounding</string>
+    <string name="rounding0">1</string>
+    <string name="rounding1">1.0</string>
+    <string name="rounding2">1.00</string>
+    <string name="rounding3">1.000</string>
+    <string name="red">red</string>
+    <string name="white">white</string>
+    <string name="yellow">yellow</string>
+    <string name="green">green</string>
+    <string name="choose_display_color">Choose display color</string>
+
+
+</resources>

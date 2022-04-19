@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.klaudiak.calculator.MyApplication">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="372dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/ACButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/textView3"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/two"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/four" />
+
+        <TextView
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/textView2"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/one"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/three" />
+
+        <TextView
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/textView4"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/three"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/textView1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/two" />
+
+        <TextView
+            android:id="@+id/stackFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/stackThree"
+            app:layout_constraintStart_toEndOf="@+id/four"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.421" />
+
+        <TextView
+            android:id="@+id/stackThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/stackTwo"
+            app:layout_constraintStart_toEndOf="@+id/three"
+            app:layout_constraintTop_toBottomOf="@+id/stackFour" />
+
+        <TextView
+            android:id="@+id/stackTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/stackOne"
+            app:layout_constraintStart_toEndOf="@+id/two"
+            app:layout_constraintTop_toBottomOf="@+id/stackThree" />
+
+        <TextView
+            android:id="@+id/stackOne"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginStart="20dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/one"
+            app:layout_constraintTop_toBottomOf="@+id/stackTwo"
+            app:layout_constraintVertical_bias="0.609" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/oneButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="insert"
+        android:text="@string/button1"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/fourButton"
+        app:layout_constraintEnd_toStartOf="@+id/twoButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ACButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/twoButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="insert"
+        android:text="@string/button2"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/fiveButton"
+        app:layout_constraintEnd_toStartOf="@+id/threeButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/oneButton"
+        app:layout_constraintTop_toBottomOf="@+id/ACButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/threeButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="insert"
+        android:text="@string/button3"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/sixButton"
+        app:layout_constraintEnd_toStartOf="@+id/expButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/twoButton"
+        app:layout_constraintTop_toBottomOf="@+id/dropButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/fourButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="insert"
+        android:text="@string/button4"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/sevenButton"
+        app:layout_constraintEnd_toStartOf="@+id/twoButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/fiveButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="insert"
+        android:text="@string/button5"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/eightButton"
+        app:layout_constraintEnd_toStartOf="@+id/sixButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fourButton"
+        app:layout_constraintTop_toBottomOf="@+id/twoButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/sixButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="insert"
+        android:text="@string/button6"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/nineButton"
+        app:layout_constraintEnd_toStartOf="@+id/multiplyButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fiveButton"
+        app:layout_constraintTop_toBottomOf="@+id/threeButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/sevenButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="insert"
+        android:text="@string/button7"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/zeroButton"
+        app:layout_constraintEnd_toStartOf="@+id/fiveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/eightButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="insert"
+        android:text="@string/button8"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/signButton"
+        app:layout_constraintEnd_toStartOf="@+id/nineButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sevenButton"
+        app:layout_constraintTop_toBottomOf="@+id/fiveButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/nineButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="insert"
+        android:text="@string/button9"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button21"
+        app:layout_constraintEnd_toStartOf="@+id/plusButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eightButton"
+        app:layout_constraintTop_toBottomOf="@+id/sixButton"
+        tools:ignore="UsingOnClickInXml" />
+
+
+    <Button
+        android:id="@+id/signButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/blue"
+        android:onClick="changeSign"
+        android:text="@string/signButton"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button21"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/zeroButton"
+        app:layout_constraintTop_toBottomOf="@+id/eightButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/zeroButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="insert"
+        android:text="@string/zeroButton"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sevenButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button21"
+        style="@style/myButton"
+        android:backgroundTint="@color/blue"
+        android:onClick="insert"
+        android:text="@string/dotButton"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/enterButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/signButton"
+        app:layout_constraintTop_toBottomOf="@+id/nineButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/expButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/blue"
+        android:onClick="exponentiation"
+        android:text="@string/expButton"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/multiplyButton"
+        app:layout_constraintEnd_toStartOf="@+id/sqrtButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/threeButton"
+        app:layout_constraintTop_toBottomOf="@+id/swapButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/sqrtButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/blue"
+        android:onClick="sqrt"
+        android:text="@string/sqrtButton"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/divideButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/expButton"
+        app:layout_constraintTop_toBottomOf="@+id/undoButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/blue"
+        android:onClick="multiplication"
+        android:text="@string/multiplyButton"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/plusButton"
+        app:layout_constraintEnd_toStartOf="@+id/divideButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/threeButton"
+        app:layout_constraintTop_toBottomOf="@+id/expButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/divideButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/blue"
+        android:onClick="division"
+        android:text="@string/divideButton"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/minusButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/multiplyButton"
+        app:layout_constraintTop_toBottomOf="@+id/sqrtButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/plusButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/blue"
+        android:onClick="addition"
+        android:text="@string/plusButton"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/enterButton"
+        app:layout_constraintEnd_toStartOf="@+id/minusButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sixButton"
+        app:layout_constraintTop_toBottomOf="@+id/multiplyButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/minusButton"
+        style="@style/myButton"
+        android:backgroundTint="@color/blue"
+        android:onClick="subtraction"
+        android:text="@string/minusButton"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/enterButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/plusButton"
+        app:layout_constraintTop_toBottomOf="@+id/divideButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/enterButton"
+        style="@style/myButton"
+        android:layout_width="142dp"
+        android:backgroundTint="@color/blue2"
+        android:onClick="enter"
+        android:text="@string/enterButton"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button21"
+        app:layout_constraintTop_toBottomOf="@+id/plusButton"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/dropButton"
+        style="@style/myButton"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:onClick="drop"
+        android:text="@string/dropButton"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/threeButton"
+        app:layout_constraintEnd_toStartOf="@+id/swapButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ACButton"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/swapButton"
+        style="@style/myButton"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:onClick="swap"
+        android:text="@string/swapButton"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/expButton"
+        app:layout_constraintEnd_toStartOf="@+id/undoButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dropButton"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/undoButton"
+        style="@style/myButton"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:onClick="undo"
+        android:text="@string/undoButton"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/sqrtButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/swapButton"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/ACButton"
+        style="@style/myButton"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:onClick="allClear"
+        android:text="@string/acButton"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/twoButton"
+        app:layout_constraintEnd_toStartOf="@+id/dropButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        style="@style/myButton"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="@color/lightGray"
+        android:onClick="openSettings"
+        android:text="@string/openSettings"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/undoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout
+    >
