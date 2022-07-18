@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "998155405769",
+    "project_id": "rpncalculator-890c4",
+    "storage_bucket": "rpncalculator-890c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998155405769:android:c255965278955a70dcc018",
+        "android_client_info": {
+          "package_name": "com.klaudiak.calculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998155405769-kbqc2njmnr22akobvdbt624uq0k9h1dg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFq5RWKXH0R1-9aSAYjz8gIsvTTLnDpBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998155405769-kbqc2njmnr22akobvdbt624uq0k9h1dg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
